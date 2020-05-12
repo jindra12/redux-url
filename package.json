@@ -1,0 +1,22 @@
+{
+  "name": "redux-url",
+  "version": "1.0.0",
+  "description": "Redux library for url management",
+  "main": "index.js",
+  "repository": "https://github.com/jindra12/redux-url.git",
+  "author": "Jan Jindráček",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn tsc"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.150",
+    "lodash": "^4.17.15",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "@types/redux": "^3.6.0",
+    "tslint": "^6.1.2",
+    "typescript": "^3.8.3"
+  }
+}
