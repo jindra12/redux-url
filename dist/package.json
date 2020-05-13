@@ -7,8 +7,10 @@
   "author": "Jan Jindráček",
   "license": "MIT",
   "man": ["./README.md"],
+  "dependencies": {
+    "redux": "^4.0.5"
+  },
   "devDependencies": {
-    "redux": "^4.0.5",
     "@types/redux": "^3.6.0"
   }
 }
