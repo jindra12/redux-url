@@ -6,6 +6,7 @@
   "repository": "https://github.com/jindra12/redux-url.git",
   "author": "Jan Jindráček",
   "license": "MIT",
+  "man": ["./README.md"],
   "devDependencies": {
     "redux": "^4.0.5",
     "@types/redux": "^3.6.0"
