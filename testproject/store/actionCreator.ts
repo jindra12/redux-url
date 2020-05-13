@@ -24,7 +24,7 @@ export const setOrder = (ordered: string): TestAction => ({
 
 export const updateFromUrl = (
     state: UrlStoreState
-) => ({
+): TestAction => ({
     type: 'SET_ALL',
     payload: {
         firstName: state.search?.firstName,

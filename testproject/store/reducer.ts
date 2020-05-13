@@ -1,4 +1,3 @@
-import { Reducer } from 'redux';
 import { TestAction } from './actionCreator';
 import { TestState } from './state';
 

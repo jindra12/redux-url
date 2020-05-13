@@ -7,7 +7,7 @@ export interface UrlAction extends Action<UrlActionTypes> {
 }
 
 /**
- * Set hash for url.
+ * Set hash for url. Dont add '#' prefix.
  */
 export const setUrlHash = (hash: string): UrlAction => ({
     type: 'SET_URL_HASH',
