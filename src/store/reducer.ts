@@ -3,8 +3,15 @@ import { UrlStoreState } from './urlStoreState';
 import { UrlAction } from './actionCreator';
 import { transformFromUrl } from '../utils/transform';
 
+/**
+ * Url initial state will be drawn from Location object.
+ */
 export const urlInitialState: UrlStoreState = transformFromUrl();
 
+/**
+ * Use this only when necessary, and define this part of store as: url: urlReducer.
+ * Use urlCombineReducers otherwise.
+ */
 export const urlReducer: Reducer<UrlStoreState, UrlAction> = (state, action) => {
     const urlState = state || urlInitialState;
     switch (action.type) {

@@ -2,6 +2,10 @@ import { StoreEnhancer, StoreEnhancerStoreCreator, AnyAction, Reducer, Action, P
 import { setNewUrl } from "./actionCreator";
 import { transformFromUrl } from "../utils/transform";
 
+/**
+ * Register the store to listen in on popstate event in case user goes back in history.
+ * Will NOT update on history.pushState manipulation.
+ */
 export const urlStoreEnhancer: StoreEnhancer = (
     next: StoreEnhancerStoreCreator
 ) => <S, A extends Action = AnyAction>(

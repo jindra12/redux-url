@@ -1,3 +1,6 @@
+/**
+ * Basically the same as Location object. Except for search, which is a map.
+ */
 export interface UrlStoreState {
     hash?: string;
     host?: string;

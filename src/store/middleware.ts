@@ -3,6 +3,10 @@ import { UrlAction } from './actionCreator';
 import { UrlStoreState } from './urlStoreState';
 import { transformQueryToSearch } from '../utils/transform';
 
+/**
+ * Middleware to operate history state changes.
+ * @param callback if user time-travels, this gets called to update rest of store.
+ */
 export const urlMiddleware = (
     callback?: (url: UrlStoreState) => AnyAction,
 ): Middleware => <TStore extends Store & { url: UrlStoreState }>(
