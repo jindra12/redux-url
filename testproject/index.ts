@@ -4,7 +4,8 @@ import $ from 'jquery';
 
 store.subscribe(() => {
     const { firstName, lastName, ordered } = store.getState().test;
-    $('#contents').append($(`<tr><td>${firstName || ''}</td><td>${lastName || ''}</td><td>${ordered || ''}</td></tr>`));
+    // tslint:disable-next-line: no-console
+    console.log({ firstName, lastName, ordered });
 });
 
 store.dispatch(setUrlFirstName('Paul'));

@@ -25,4 +25,6 @@ export const transformSearchToQuery = (
 
 export const transformQueryToSearch = (
     query: { [key: string]: string }
-) => `?${Object.entries(query).map(([key, value]) => value ? `${encodeURIComponent(key)}=${encodeURIComponent(value)}` : '').join('&')}`;
+) => `?${Object.entries(query)
+        .filter(([key, value]) => key && value)
+        .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`).join('&')}`;
