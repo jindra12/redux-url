@@ -1,5 +1,5 @@
 {
-  "name": "redux-url",
+  "name": "redux-url-sync",
   "version": "1.0.0",
   "description": "Redux library for url management",
   "main": "index.js",
