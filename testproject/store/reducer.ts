@@ -15,8 +15,10 @@ export const testReducer = (state: TestState | undefined, action: TestAction) =>
             return { ...testState, firstName: action.payload.firstName };
         case 'SET_LAST_NAME':
             return { ...testState, lastName: action.payload.lastName };
-       case 'SET_ORDER':
+        case 'SET_ORDER':
             return { ...testState, ordered: action.payload.ordered };
+        case 'SET_ALL':
+            return { ...testState, ...action.payload };
         default:
             return testState;
     }
