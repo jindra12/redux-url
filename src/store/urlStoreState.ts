@@ -1,4 +1,4 @@
-export interface UrlStoreType {
+export interface UrlStoreState {
     hash?: string;
     host?: string;
     hostname?: string;
@@ -7,5 +7,5 @@ export interface UrlStoreType {
     pathname?: string;
     port?: string;
     protocol?: string;
-    search?: string;
+    search?: { [key: string]: string };
 }

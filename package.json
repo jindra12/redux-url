@@ -1,18 +1,16 @@
 {
-  "name": "redux-url",
+  "name": "redux-url-dev",
   "version": "1.0.0",
   "description": "Redux library for url management",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "repository": "https://github.com/jindra12/redux-url.git",
   "author": "Jan Jindráček",
   "license": "MIT",
   "scripts": {
-    "build": "yarn tsc"
-  },
-  "dependencies": {
-    "redux": "^4.0.5"
+    "build": "rm ./dist/index.js ./dist/index.d.ts; rm -rf ./dist/store; rm -rf ./dist/utils; yarn tsc"
   },
   "devDependencies": {
+    "redux": "^4.0.5",
     "@types/redux": "^3.6.0",
     "tslint": "^6.1.2",
     "typescript": "^3.8.3"
