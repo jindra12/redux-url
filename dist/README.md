@@ -1,4 +1,4 @@
-# Redux-url documentation
+# Redux-url-sync documentation
 
 No other dependencies needed besides redux!
 This is my first package to create, so be careful :) .
