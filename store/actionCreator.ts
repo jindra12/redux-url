@@ -3,15 +3,20 @@ import { UrlActionTypes } from './actionTypes';
 import { UrlStoreType } from './urlStoreType';
 
 export interface UrlAction extends Action<UrlActionTypes> {
-    payload: UrlStoreType;
+    payload: Partial<UrlStoreType>;
 }
 
-export const forceSetUrl = (location: UrlStoreType): UrlAction => ({
-    type: 'FORCE_SET_URL_ACTION',
+export const setUrlHash = (hash: string): UrlAction => ({
+    type: 'SET_URL_HASH',
+    payload: { hash: `#${hash}` },
+});
+
+export const setNewUrl = (location: UrlStoreType): UrlAction => ({
+    type: 'SET_NEW_URL',
     payload: location,
 });
 
-export const setUrl = (location: UrlStoreType): UrlAction => ({
-    type: 'SET_URL_ACTION',
-    payload: location,
+export const setUrlQuery = (query: object): UrlAction => ({
+    type: 'SET_URL_QUERY',
+    payload: { search: `?${Object.values(query).map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`).join('&')}` },
 });

@@ -1,5 +1,5 @@
 import { combineReducers, ReducersMapObject, Action } from 'redux';
-import { urlReducer } from '..';
+import { urlReducer } from './reducer';
 
 export const urlCombineReducers = <S, R extends Action<any>>(
     reducers: ReducersMapObject<S, R>

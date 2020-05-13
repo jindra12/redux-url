@@ -1,1 +1,1 @@
-export type UrlActionTypes = 'SET_URL_ACTION' | 'FORCE_SET_URL_ACTION';
+export type UrlActionTypes = 'SET_URL_HASH' | 'SET_URL_QUERY' | 'SET_NEW_URL';

@@ -11,14 +11,3 @@ export const transformFromUrl = (): UrlStoreType => ({
     protocol: location.protocol,
     search: location.search,
 });
-
-export const transformToUrl = (urlObject: UrlStoreType) => {
-    location.hash = urlObject.hash;
-    location.host = urlObject.host;
-    location.hostname = urlObject.hostname;
-    location.href = urlObject.href;
-    location.pathname = urlObject.pathname;
-    location.port = urlObject.port;
-    location.protocol = urlObject.protocol;
-    location.search = urlObject.search;
-};
