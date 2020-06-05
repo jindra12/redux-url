@@ -4,3 +4,5 @@ export { urlCombineReducers } from './store/urlCombineReducers';
 export { urlInitialState, urlReducer } from './store/reducer';
 export { subscribeToUrl } from './store/subscribe';
 export { UrlStoreState } from './store/urlStoreState';
+export { UrlAction } from './store/actionCreator';
+export { UrlActionTypes } from './store/actionTypes';
